@@ -6,24 +6,18 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags -->
     <title>Alexander D. Munz | Starmindsdesign</title>
-    <meta name="description"
-        content="Innovatives Webdesign aus Baden-Württemberg für Startups, Mittelstand, Handwerk & Gastro. Maßgeschneiderte Websites, die überzeugen. Jetzt Projekt starten!">
-    <meta name="keywords"
-        content="Webdesign Baden-Württemberg, Webdesign Deutschland, Webdesign Remote, Website erstellen lassen, Webdesign Handwerk, Webdesign Gastro, Starmindsdesign, Alexander Munz">
+    <meta name="description" content="Innovatives Webdesign aus Baden-Württemberg für Startups, Mittelstand, Handwerk & Gastro. Maßgeschneiderte Websites, die überzeugen. Jetzt Projekt starten!">
+    <meta name="keywords" content="Webdesign Baden-Württemberg, Webdesign Deutschland, Webdesign Remote, Website erstellen lassen, Webdesign Handwerk, Webdesign Gastro, Starmindsdesign, Alexander Munz">
     <meta name="author" content="Alexander Munz">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Kreatives Webdesign für dein Business | Starmindsdesign">
-    <meta property="og:description"
-        content="Wir bringen dein Business online. Professionell, kreativ und zuverlässig. Für Startups, Mittelstand & Handwerk.">
+    <meta property="og:description" content="Wir bringen dein Business online. Professionell, kreativ und zuverlässig. Für Startups, Mittelstand & Handwerk.">
     <meta property="og:image" content="images/logoNEU.png">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
 
-    <!-- Schema.org / JSON-LD for LLMO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -74,9 +68,7 @@
     }
     </script>
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body {
@@ -97,28 +89,14 @@
         }
 
         /* Stagger delays for grid items */
-        .delay-100 {
-            transition-delay: 100ms;
-        }
-
-        .delay-200 {
-            transition-delay: 200ms;
-        }
-
-        .delay-300 {
-            transition-delay: 300ms;
-        }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
 
         @keyframes fade-in-up {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
 
         .animate-fade-in-up {
@@ -128,30 +106,21 @@
         /* LIQUID GLASS BUTTONS */
         .btn-liquid {
             background: linear-gradient(135deg, rgba(37, 99, 235, 0.95), rgba(147, 51, 234, 0.95));
-            /* Branding Colors */
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-top: 1px solid rgba(255, 255, 255, 0.5);
-            /* Lichtkante oben */
-            box-shadow:
-                0 4px 6px -1px rgba(0, 0, 0, 0.1),
-                0 2px 4px -1px rgba(0, 0, 0, 0.06),
-                inset 0 0 20px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), inset 0 0 20px rgba(255, 255, 255, 0.1);
             position: relative;
             overflow: hidden;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             color: white !important;
-            /* Immer weißer Text für Kontrast */
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         }
 
         .btn-liquid:hover {
             transform: translateY(-2px);
-            box-shadow:
-                0 10px 15px -3px rgba(37, 99, 235, 0.4),
-                0 4px 6px -2px rgba(147, 51, 234, 0.3),
-                inset 0 0 30px rgba(255, 255, 255, 0.25);
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4), 0 4px 6px -2px rgba(147, 51, 234, 0.3), inset 0 0 30px rgba(255, 255, 255, 0.25);
             filter: brightness(1.1);
             border-top-color: rgba(255, 255, 255, 0.8);
         }
@@ -164,48 +133,34 @@
 
 <body class="min-h-screen bg-[#FBFBFD] text-[#1D1D1F] selection:bg-blue-100 selection:text-blue-900">
 
-    <!-- Navigation - Glassmorphism Light -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent py-6">
         <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
 
-            <!-- LOGO BEREICH -->
             <div class="flex items-center gap-3 cursor-pointer group">
-                <!-- Hier wird das Bild geladen. Fallback (falls Bild fehlt) ist der Text -->
-                <a href="index.html"
-                    class="relative w-auto h-16 flex items-center transform transition-transform duration-300 group-hover:scale-105 filter drop-shadow-xl">
+                <a href="index.html" class="relative w-auto h-16 flex items-center transform transition-transform duration-300 group-hover:scale-105 filter drop-shadow-xl">
                     <img src="images/logoNEU.png" alt="Alexander D. Munz Logo" class="h-full w-auto object-contain"
                         onerror="this.style.display='none'; document.getElementById('logo-fallback').classList.remove('hidden'); document.getElementById('logo-fallback').classList.add('flex');" />
-                    <!-- Fallback Logo (wird angezeigt, bis du das PNG hochlädst) -->
-                    <div id="logo-fallback"
-                        class="hidden h-14 w-14 bg-black text-white rounded-xl items-center justify-center font-bold tracking-tighter shadow-lg text-xl">
+                    <div id="logo-fallback" class="hidden h-14 w-14 bg-black text-white rounded-xl items-center justify-center font-bold tracking-tighter shadow-lg text-xl">
                         AM
                     </div>
                 </a>
-                <a href="index.html"
-                    class="font-semibold text-lg tracking-tight text-black opacity-90 group-hover:opacity-100 transition-opacity">
+                <a href="index.html" class="font-semibold text-lg tracking-tight text-black opacity-90 group-hover:opacity-100 transition-opacity">
                     Alexander D. Munz
                 </a>
             </div>
 
-            <a href="mailto:alexander.daniel@alexandermunz.de?subject=Allgemeine%20Anfrage&body=Hallo%20Alexander%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20dein%20Angebot.%0A%0ABitte%20nimm%20Kontakt%20mit%20mir%20auf%20via%3A%0ATelefon%3A%20____________________%0AE-Mail%3A%20____________________%0A%0A---%0AHinweis%20zum%20Datenschutz%3A%20Ich%20bin%20damit%20einverstanden%2C%20dass%20meine%20Daten%20zur%20Bearbeitung%20dieser%20Anfrage%20verarbeitet%20werden.%20Sofern%20kein%20Auftrag%20zustande%20kommt%20oder%20die%20Daten%20nicht%20mehr%20ben%C3%B6tigt%20werden%2C%20werden%20diese%20gel%C3%B6scht."
+            <a href="mailto:alexander.daniel@alexandermunz.de?subject=Neue%20Strategiegespr%C3%A4chsanfrage&body=Hallo%20Alexander%20ich%20interessiere%20mich%20f%C3%BCr%20ein%20kostenloses%20Beratungsgespr%C3%A4ch%20bitte%20kontaktiere%20mich%20per%20E-Mail%20oder%20per%20Telefon%3A%20%5Bhier%20Nummer%20eintragen%5D.%20Liebe%20Gr%C3%BC%C3%9Fe%20%5BHier%20Name%20eintragen%5D."
                 class="btn-liquid px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 transform">
                 Beratung anfragen
             </a>
         </div>
     </nav>
 
-    <!-- Hero Section - Clean & Direct -->
-    <section
-        class="relative min-h-screen flex flex-col justify-center items-center px-6 pt-20 pb-10 overflow-hidden bg-[#FBFBFD]">
-
-        <!-- Subtle Background Blobs (Light Mode) -->
-        <div class="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-[100px] animate-pulse"
-            style="animation-duration: 8s;"></div>
-        <div class="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-purple-100/50 rounded-full blur-[100px] animate-pulse"
-            style="animation-duration: 10s;"></div>
+    <section class="relative min-h-screen flex flex-col justify-center items-center px-6 pt-20 pb-10 overflow-hidden bg-[#FBFBFD]">
+        <div class="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-[100px] animate-pulse" style="animation-duration: 8s;"></div>
+        <div class="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-purple-100/50 rounded-full blur-[100px] animate-pulse" style="animation-duration: 10s;"></div>
 
         <div class="text-center max-w-4xl z-10 space-y-6 reveal active">
-            <!-- Hero starts revealed/animated by keyframe, but we can use reveal class too or keep the CSS animation -->
             <div class="max-w-4xl mx-auto">
                 <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight tracking-tight text-[#1D1D1F] reveal">
                     Digitale Strategien & <br>
@@ -214,20 +169,17 @@
                     </span>
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-500 mb-12 leading-relaxed max-w-2xl mx-auto reveal delay-100">
-                    Ich helfe Unternehmen - vom <strong>Startup</strong> und <strong>Mittelstand</strong> bis hin zu
-                    <strong>Handwerk</strong> und <strong>Gastro</strong> - dabei, ihre digitale Präsenz zu maximieren.
-                    Ob lokal oder remote: Durch gezieltes Design schaffe ich Erlebnisse, die im Gedächtnis bleiben.
+                    Ich helfe Unternehmen - vom <strong>Startup</strong> und <strong>Mittelstand</strong> bis hin zu <strong>Handwerk</strong> und <strong>Gastro</strong> - dabei, ihre digitale Präsenz zu maximieren. Ob lokal oder remote: Durch gezieltes Design schaffe ich Erlebnisse, die im Gedächtnis bleiben.
                 </p>
             </div>
 
             <div class="pt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="mailto:alexander.daniel@alexandermunz.de?subject=Anfrage%20Potenzialanalyse&body=Hallo%20Alexander%2C%0A%0Aich%20m%C3%B6chte%20mein%20digitales%20Potenzial%20analysieren%20lassen.%0A%0ABitte%20nimm%20Kontakt%20mit%20mir%20auf%20via%3A%0ATelefon%3A%20____________________%0AE-Mail%3A%20____________________%0A%0A---%0AHinweis%20zum%20Datenschutz%3A%20Ich%20bin%20damit%20einverstanden%2C%20dass%20meine%20Daten%20zur%20Bearbeitung%20dieser%20Anfrage%20verarbeitet%20werden.%20Sofern%20kein%20Auftrag%20zustande%20kommt%20oder%20die%20Daten%20nicht%20mehr%20ben%C3%B6tigt%20werden%2C%20werden%20diese%20gel%C3%B6scht."
+                <a href="mailto:alexander.daniel@alexandermunz.de?subject=Neue%20Strategiegespr%C3%A4chsanfrage&body=Hallo%20Alexander%20ich%20interessiere%20mich%20f%C3%BCr%20ein%20kostenloses%20Beratungsgespr%C3%A4ch%20bitte%20kontaktiere%20mich%20per%20E-Mail%20oder%20per%20Telefon%3A%20%5Bhier%20Nummer%20eintragen%5D.%20Liebe%20Gr%C3%BC%C3%9Fe%20%5BHier%20Name%20eintragen%5D."
                     class="btn-liquid group px-8 py-4 rounded-full font-semibold text-lg flex items-center gap-2">
                     Jetzt Potenzial analysieren
                     <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                 </a>
-                <button
-                    class="px-8 py-4 text-[#0071E3] hover:bg-blue-50 rounded-full font-medium transition-colors flex items-center gap-2">
+                <button class="px-8 py-4 text-[#0071E3] hover:bg-blue-50 rounded-full font-medium transition-colors flex items-center gap-2">
                     <i data-lucide="check-circle-2" class="w-[18px] h-[18px]"></i>
                     SEO & LLM Optimiert
                 </button>
@@ -235,7 +187,6 @@
         </div>
     </section>
 
-    <!-- Pain Points Section - "Warum wir?" -->
     <section class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-20 reveal">
@@ -246,46 +197,36 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <!-- Left: The Problems -->
                 <div class="space-y-8">
-                    <div
-                        class="flex gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg transition-shadow duration-300 reveal delay-100">
+                    <div class="flex gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg transition-shadow duration-300 reveal delay-100">
                         <div class="bg-red-100 p-3 rounded-full h-fit text-red-600">
                             <i data-lucide="help-circle" class="w-6 h-6"></i>
                         </div>
                         <div>
                             <h3 class="text-lg font-bold mb-2">"Brauchen wir das überhaupt?"</h3>
-                            <p class="text-gray-600">Unsicherheit über den Nutzen von Social Media für B2B oder
-                                spezielle Nischen.</p>
+                            <p class="text-gray-600">Unsicherheit über den Nutzen von Social Media für B2B oder spezielle Nischen.</p>
                         </div>
                     </div>
-                    <div
-                        class="flex gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg transition-shadow duration-300 reveal delay-200">
+                    <div class="flex gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg transition-shadow duration-300 reveal delay-200">
                         <div class="bg-orange-100 p-3 rounded-full h-fit text-orange-600">
                             <i data-lucide="target" class="w-6 h-6"></i>
                         </div>
                         <div>
                             <h3 class="text-lg font-bold mb-2">"Wir wissen nicht, wo anfangen."</h3>
-                            <p class="text-gray-600">Tausend Plattformen, Trends und Tools. Ohne Fokus verpufft die
-                                Energie.</p>
+                            <p class="text-gray-600">Tausend Plattformen, Trends und Tools. Ohne Fokus verpufft die Energie.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right: The Solution (Visual) -->
-                <div
-                    class="reveal delay-300 relative h-full min-h-[400px] bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-8 text-white flex flex-col justify-center overflow-hidden shadow-2xl">
-                    <div
-                        class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2">
-                    </div>
+                <div class="reveal delay-300 relative h-full min-h-[400px] bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-8 text-white flex flex-col justify-center overflow-hidden shadow-2xl">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
                     <h3 class="text-3xl font-bold mb-6 relative z-10">Die Lösung: Ein klarer Fahrplan.</h3>
                     <ul class="space-y-4 relative z-10 text-blue-50">
                         <li class="flex items-center gap-3">
                             <i data-lucide="check-circle-2" class="text-blue-300"></i> Status-Quo Analyse
                         </li>
                         <li class="flex items-center gap-3">
-                            <i data-lucide="check-circle-2" class="text-blue-300"></i> Zielgruppen-Definition (Wer kauft
-                            wirklich?)
+                            <i data-lucide="check-circle-2" class="text-blue-300"></i> Zielgruppen-Definition (Wer kauft wirklich?)
                         </li>
                         <li class="flex items-center gap-3">
                             <i data-lucide="check-circle-2" class="text-blue-300"></i> Kanal-Auswahl (Weniger ist mehr)
@@ -294,7 +235,7 @@
                             <i data-lucide="check-circle-2" class="text-blue-300"></i> Content-Planung & Umsetzung
                         </li>
                     </ul>
-                    <a href="mailto:alexander.daniel@alexandermunz.de?subject=Anfrage%20Strategie-Gespr%C3%A4ch&body=Hallo%20Alexander%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20ein%20Strategie-Gespr%C3%A4ch.%0A%0ABitte%20nimm%20Kontakt%20mit%20mir%20auf%20via%3A%0ATelefon%3A%20____________________%0AE-Mail%3A%20____________________%0A%0A---%0AHinweis%20zum%20Datenschutz%3A%20Ich%20bin%20damit%20einverstanden%2C%20dass%20meine%20Daten%20zur%20Bearbeitung%20dieser%20Anfrage%20verarbeitet%20werden.%20Sofern%20kein%20Auftrag%20zustande%20kommt%20oder%20die%20Daten%20nicht%20mehr%20ben%C3%B6tigt%20werden%2C%20werden%20diese%20gel%C3%B6scht."
+                    <a href="mailto:alexander.daniel@alexandermunz.de?subject=Neue%20Strategiegespr%C3%A4chsanfrage&body=Hallo%20Alexander%20ich%20interessiere%20mich%20f%C3%BCr%20ein%20kostenloses%20Beratungsgespr%C3%A4ch%20bitte%20kontaktiere%20mich%20per%20E-Mail%20oder%20per%20Telefon%3A%20%5Bhier%20Nummer%20eintragen%5D.%20Liebe%20Gr%C3%BC%C3%9Fe%20%5BHier%20Name%20eintragen%5D."
                         class="mt-8 btn-liquid px-8 py-3 rounded-xl font-bold w-fit shadow-lg block">
                         Strategie-Gespräch buchen
                     </a>
@@ -303,7 +244,6 @@
         </div>
     </section>
 
-    <!-- Services Bento Grid - Light & Professional -->
     <section class="py-32 px-6 max-w-7xl mx-auto bg-[#FBFBFD]">
         <div class="mb-16 text-center md:text-left reveal">
             <h2 class="text-4xl md:text-5xl font-bold mb-6 text-[#1D1D1F]">Meine Leistungen.</h2>
@@ -312,177 +252,119 @@
             </p>
         </div>
 
-        <!-- The Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[300px]">
-
-            <!-- Card 1: Social Media Strategy (Large) -->
-            <div
-                class="reveal col-span-1 md:col-span-2 row-span-2 group relative overflow-hidden rounded-[2.5rem] bg-white border border-gray-200 p-10 transition-all duration-500 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)]">
-                <div
-                    class="absolute top-0 right-0 w-80 h-80 bg-blue-50 rounded-full blur-3xl -mr-20 -mt-20 transition-all duration-700 group-hover:bg-blue-100">
-                </div>
+            <div class="reveal col-span-1 md:col-span-2 row-span-2 group relative overflow-hidden rounded-[2.5rem] bg-white border border-gray-200 p-10 transition-all duration-500 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)]">
+                <div class="absolute top-0 right-0 w-80 h-80 bg-blue-50 rounded-full blur-3xl -mr-20 -mt-20 transition-all duration-700 group-hover:bg-blue-100"></div>
                 <div class="relative z-10 h-full flex flex-col justify-between">
-                    <div
-                        class="w-14 h-14 bg-[#0071E3] rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg shadow-blue-200">
+                    <div class="w-14 h-14 bg-[#0071E3] rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg shadow-blue-200">
                         <i data-lucide="target" class="w-7 h-7"></i>
                     </div>
                     <div>
                         <h3 class="text-3xl font-bold text-[#1D1D1F] mb-4">Social Media & Ads</h3>
                         <p class="text-gray-500 leading-relaxed text-lg">
-                            Von Instagram & Facebook bis TikTok & LinkedIn: Ich entwickle Konzepte, die performen.
-                            Inklusive Community Management und professionellen Paid Ads Kampagnen.
+                            Von Instagram & Facebook bis TikTok & LinkedIn: Ich entwickle Konzepte, die performen. Inklusive Community Management und professionellen Paid Ads Kampagnen.
                         </p>
                     </div>
                     <div class="mt-8 flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-600">TikTok &
-                            Verticals</span>
-                        <span class="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-600">Community
-                            Management</span>
-                        <span class="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-600">Paid
-                            Ads</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-600">TikTok & Verticals</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-600">Community Management</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-600">Paid Ads</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 2: Webdesign (Tall) -->
-            <div
-                class="reveal delay-100 col-span-1 md:col-span-1 row-span-2 group relative overflow-hidden rounded-[2.5rem] bg-black text-white p-8 transition-all duration-500 hover:shadow-2xl">
+            <div class="reveal delay-100 col-span-1 md:col-span-1 row-span-2 group relative overflow-hidden rounded-[2.5rem] bg-black text-white p-8 transition-all duration-500 hover:shadow-2xl">
                 <div class="absolute inset-0 bg-gradient-to-b from-gray-800 to-black opacity-50"></div>
                 <div class="relative z-10 h-full flex flex-col">
                     <div class="mb-auto">
                         <i data-lucide="layout" class="w-12 h-12 text-gray-300 mb-6"></i>
                         <h3 class="text-2xl font-bold mb-4">Webdesign & UX</h3>
                         <p class="text-gray-400 leading-relaxed">
-                            Eine Website muss verkaufen, nicht nur gut aussehen. Ich berate zu User Experience (UX) und
-                            Conversion-Optimierung.
+                            Eine Website muss verkaufen, nicht nur gut aussehen. Ich berate zu User Experience (UX) und Conversion-Optimierung.
                         </p>
                     </div>
                     <div class="mt-8 pt-8 border-t border-gray-800">
                         <p class="text-sm font-bold text-gray-300 mb-2">FOKUS AUF:</p>
                         <ul class="space-y-2 text-gray-400 text-sm">
-                            <li class="flex items-center gap-2">
-                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Mobile First (Apple Standard)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> SEO Struktur
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Speed Optimization
-                            </li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Mobile First (Apple Standard)</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> SEO Struktur</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Speed Optimization</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 3: SEO & LLMO -->
-            <div
-                class="reveal delay-200 col-span-1 md:col-span-1 row-span-1 group relative overflow-hidden rounded-[2.5rem] bg-white border border-gray-200 p-8 hover:border-blue-300 transition-colors duration-300">
+            <div class="reveal delay-200 col-span-1 md:col-span-1 row-span-1 group relative overflow-hidden rounded-[2.5rem] bg-white border border-gray-200 p-8 hover:border-blue-300 transition-colors duration-300">
                 <i data-lucide="bar-chart-3" class="w-10 h-10 text-[#0071E3] mb-4"></i>
                 <h3 class="text-xl font-bold mb-2">SEO & KI-Ready</h3>
-                <p class="text-sm text-gray-500">
-                    Werden Sie gefunden – von Google UND von KI-Systemen (LLM Optimization).
-                </p>
+                <p class="text-sm text-gray-500">Werden Sie gefunden – von Google UND von KI-Systemen (LLM Optimization).</p>
             </div>
 
-            <!-- Card 4: Coaching/Schulung -->
-            <div
-                class="reveal delay-200 col-span-1 md:col-span-1 row-span-1 group relative overflow-hidden rounded-[2.5rem] bg-[#F5F5F7] p-8 flex flex-col justify-center items-center text-center hover:bg-white hover:shadow-xl transition-all duration-300">
+            <div class="reveal delay-200 col-span-1 md:col-span-1 row-span-1 group relative overflow-hidden rounded-[2.5rem] bg-[#F5F5F7] p-8 flex flex-col justify-center items-center text-center hover:bg-white hover:shadow-xl transition-all duration-300">
                 <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 shadow-sm">
                     <i data-lucide="monitor" class="text-gray-700 w-8 h-8"></i>
                 </div>
                 <h3 class="text-lg font-bold">Workshops</h3>
-                <p class="text-xs text-gray-500 mt-2">
-                    Individuelle Team-Schulungen für Social Media & Content Creation.
-                </p>
+                <p class="text-xs text-gray-500 mt-2">Individuelle Team-Schulungen für Social Media & Content Creation.</p>
             </div>
         </div>
     </section>
 
-    <!-- Pricing / Retainer Section -->
     <section class="py-24 px-6 bg-white">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-4xl font-bold mb-16 text-center text-[#1D1D1F] reveal">Transparente Investition.</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Starter Package -->
-                <div
-                    class="p-8 rounded-[2.5rem] bg-[#F5F5F7] border border-transparent hover:border-blue-200 transition-colors reveal delay-100">
+                <div class="p-8 rounded-[2.5rem] bg-[#F5F5F7] border border-transparent hover:border-blue-200 transition-colors reveal delay-100">
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Web Starter</h3>
-                    <p class="text-sm text-gray-500 mb-6 h-10">Der perfekte erste Eindruck für Selbstständige & kleine
-                        Unternehmen.</p>
-                    <div class="text-3xl font-bold mb-6">ab 2.490€ <span class="text-base font-normal text-gray-500">/
-                            einmalig</span></div>
+                    <p class="text-sm text-gray-500 mb-6 h-10">Der perfekte erste Eindruck für Selbstständige & kleine Unternehmen.</p>
+                    <div class="text-3xl font-bold mb-6">ab 2.490€ <span class="text-base font-normal text-gray-500">/ einmalig</span></div>
                     <ul class="space-y-3 text-sm text-gray-600 mb-8">
-                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Modernes
-                            Webdesign (Onepager)</li>
-                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Mobile First
-                            (Responsive)</li>
-                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> SEO Basis-Setup
-                        </li>
-                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i>
-                            Datenschutz-konform</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Modernes Webdesign (Onepager)</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Mobile First (Responsive)</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> SEO Basis-Setup</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Datenschutz-konform</li>
                     </ul>
-                    <a href="mailto:alexander.daniel@alexandermunz.de?subject=Anfrage%20Web%20Starter&body=Hallo%20Alexander%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20das%20Web%20Starter%20Paket.%0A%0ABitte%20nimm%20Kontakt%20mit%20mir%20auf%20via%3A%0ATelefon%3A%20____________________%0AE-Mail%3A%20____________________%0A%0A---%0AHinweis%20zum%20Datenschutz%3A%20Ich%20bin%20damit%20einverstanden%2C%20dass%20meine%20Daten%20zur%20Bearbeitung%20dieser%20Anfrage%20verarbeitet%20werden.%20Sofern%20kein%20Auftrag%20zustande%20kommt%20oder%20die%20Daten%20nicht%20mehr%20ben%C3%B6tigt%20werden%2C%20werden%20diese%20gel%C3%B6scht."
+                    <a href="mailto:alexander.daniel@alexandermunz.de?subject=Neue%20Web%20Starter%20Anfrage&body=Hallo%20Alexander%20ich%20interessiere%20mich%20f%C3%BCr%20ein%20kostenloses%20Beratungsgespr%C3%A4ch%20zum%20Thema%20Web%20Starter%20Paket%20bitte%20kontaktiere%20mich%20per%20E-Mail%20oder%20per%20Telefon%3A%20%5Bhier%20Nummer%20eintragen%5D.%20Liebe%20Gr%C3%BC%C3%9Fe%20%5BHier%20Name%20eintragen%5D."
                         class="block w-full py-3 text-center rounded-xl btn-liquid font-bold transition-colors">Anfragen</a>
                 </div>
 
-                <!-- Growth Package (Retainer) -->
-                <div
-                    class="p-8 rounded-[2.5rem] bg-[#1D1D1F] text-white relative overflow-hidden reveal delay-200 transform md:-translate-y-4 shadow-xl">
-                    <div
-                        class="absolute top-0 right-0 bg-[#0071E3] text-white text-xs font-bold px-4 py-2 rounded-bl-2xl">
-                        POPULÄR</div>
+                <div class="p-8 rounded-[2.5rem] bg-[#1D1D1F] text-white relative overflow-hidden reveal delay-200 transform md:-translate-y-4 shadow-xl">
+                    <div class="absolute top-0 right-0 bg-[#0071E3] text-white text-xs font-bold px-4 py-2 rounded-bl-2xl">POPULÄR</div>
                     <h3 class="text-xl font-bold mb-2">Social Growth</h3>
                     <p class="text-sm text-gray-400 mb-6 h-10">Kontinuierliche Sichtbarkeit & Community Aufbau.</p>
-                    <div class="text-3xl font-bold mb-2">ab 990€ <span class="text-base font-normal text-gray-400">/
-                            monatlich</span></div>
-                    <p class="text-xs text-gray-400 mb-6">Das Konzept ist bei einer Laufzeit von 6 Monaten kostenlos,
-                        ansonsten einmalig 1.500€.</p>
+                    <div class="text-3xl font-bold mb-2">ab 990€ <span class="text-base font-normal text-gray-400">/ monatlich</span></div>
+                    <p class="text-xs text-gray-400 mb-6">Das Konzept ist bei einer Laufzeit von 6 Monaten kostenlos, ansonsten einmalig 1.500€.</p>
                     <ul class="space-y-3 text-sm text-gray-300 mb-8">
-                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-[#0071E3]"></i> Individuelle
-                            Strategie</li>
-                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-[#0071E3]"></i> 4 High-Quality
-                            Posts / Monat</li>
-                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-[#0071E3]"></i> Community
-                            Management Basic</li>
-                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-[#0071E3]"></i> Monatliches
-                            Reporting</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-[#0071E3]"></i> Individuelle Strategie</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-[#0071E3]"></i> 4 High-Quality Posts / Monat</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-[#0071E3]"></i> Community Management Basic</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-[#0071E3]"></i> Monatliches Reporting</li>
                     </ul>
-                    <a href="mailto:alexander.daniel@alexandermunz.de?subject=Anfrage%20Social%20Growth&body=Hallo%20Alexander%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20das%20Social%20Growth%20Paket.%0A%0ABitte%20nimm%20Kontakt%20mit%20mir%20auf%20via%3A%0ATelefon%3A%20____________________%0AE-Mail%3A%20____________________%0A%0A---%0AHinweis%20zum%20Datenschutz%3A%20Ich%20bin%20damit%20einverstanden%2C%20dass%20meine%20Daten%20zur%20Bearbeitung%20dieser%20Anfrage%20verarbeitet%20werden.%20Sofern%20kein%20Auftrag%20zustande%20kommt%20oder%20die%20Daten%20nicht%20mehr%20ben%C3%B6tigt%20werden%2C%20werden%20diese%20gel%C3%B6scht."
-                        class="block w-full py-3 text-center rounded-xl btn-liquid font-bold transition-colors shadow-lg">Jetzt
-                        starten</a>
+                    <a href="mailto:alexander.daniel@alexandermunz.de?subject=Neue%20Anfrage%20zum%20Social%20Media%20Paket&body=Hallo%20Alexander%20ich%20interessiere%20mich%20f%C3%BCr%20ein%20kostenloses%20Beratungsgespr%C3%A4ch%20zum%20Thema%20Social%20Media%20Management%20bitte%20kontaktiere%20mich%20per%20E-Mail%20oder%20per%20Telefon%3A%20%5Bhier%20Nummer%20eintragen%5D.%20Liebe%20Gr%C3%BC%C3%9Fe%20%5BHier%20Name%20eintragen%5D."
+                        class="block w-full py-3 text-center rounded-xl btn-liquid font-bold transition-colors shadow-lg">Jetzt starten</a>
                 </div>
 
-                <!-- Pro Package -->
-                <div
-                    class="p-8 rounded-[2.5rem] bg-[#F5F5F7] border border-transparent hover:border-blue-200 transition-colors reveal delay-300">
+                <div class="p-8 rounded-[2.5rem] bg-[#F5F5F7] border border-transparent hover:border-blue-200 transition-colors reveal delay-300">
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Full Service</h3>
                     <p class="text-sm text-gray-500 mb-6 h-10">Digitale Dominanz. Web, Social & Ads aus einer Hand.</p>
                     <div class="text-3xl font-bold mb-6">Individuell</div>
                     <ul class="space-y-3 text-sm text-gray-600 mb-8">
-                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Alles aus Web &
-                            Social</li>
-                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Paid Ads
-                            Kampagnen (Meta/TikTok)</li>
-                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Content
-                            Creation Days vor Ort</li>
-                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Priorisierter
-                            Support</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Alles aus Web & Social</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Paid Ads Kampagnen (Meta/TikTok)</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Content Creation Days vor Ort</li>
+                        <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Priorisierter Support</li>
                     </ul>
-                    <a href="mailto:alexander.daniel@alexandermunz.de?subject=Anfrage%20Full%20Service&body=Hallo%20Alexander%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20das%20Full%20Service%20Paket.%0A%0ABitte%20nimm%20Kontakt%20mit%20mir%20auf%20via%3A%0ATelefon%3A%20____________________%0AE-Mail%3A%20____________________%0A%0A---%0AHinweis%20zum%20Datenschutz%3A%20Ich%20bin%20damit%20einverstanden%2C%20dass%20meine%20Daten%20zur%20Bearbeitung%20dieser%20Anfrage%20verarbeitet%20werden.%20Sofern%20kein%20Auftrag%20zustande%20kommt%20oder%20die%20Daten%20nicht%20mehr%20ben%C3%B6tigt%20werden%2C%20werden%20diese%20gel%C3%B6scht."
-                        class="block w-full py-3 text-center rounded-xl btn-liquid font-bold transition-colors">Angebot
-                        anfordern</a>
+                    <a href="mailto:alexander.daniel@alexandermunz.de?subject=Neue%20Anfrage%20zum%20Thema%20Full%20Service%20Paket&body=Hallo%20Alexander%20ich%20interessiere%20mich%20f%C3%BCr%20ein%20kostenloses%20Beratungsgespr%C3%A4ch%20zum%20Thema%20Full%20Service%20Paket%20bitte%20kontaktiere%20mich%20per%20E-Mail%20oder%20per%20Telefon%3A%20%5Bhier%20Nummer%20eintragen%5D.%20Liebe%20Gr%C3%BC%C3%9Fe%20%5BHier%20Name%20eintragen%5D."
+                        class="block w-full py-3 text-center rounded-xl btn-liquid font-bold transition-colors">Angebot anfordern</a>
                 </div>
             </div>
-            <p class="text-center text-xs text-gray-400 mt-8">* Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird
-                keine Umsatzsteuer berechnet. Mindestlaufzeit für Retainer: 3 Monate.</p>
+            <p class="text-center text-xs text-gray-400 mt-8">* Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird keine Umsatzsteuer berechnet. Mindestlaufzeit für Retainer: 3 Monate.</p>
         </div>
     </section>
 
-    <!-- Trust & Methodology Section -->
     <section class="py-24 bg-white border-t border-gray-100">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-12 reveal">Mein Ansatz: <span class="text-[#0071E3]">Iterativ &
-                    Persönlich.</span></h2>
+            <h2 class="text-3xl font-bold mb-12 reveal">Mein Ansatz: <span class="text-[#0071E3]">Iterativ & Persönlich.</span></h2>
 
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                 <div class="p-4 reveal delay-100">
@@ -498,8 +380,7 @@
                 <div class="p-4 reveal delay-300">
                     <div class="text-3xl font-bold text-gray-200 mb-4">03</div>
                     <h3 class="font-bold text-lg mb-2">Umsetzung</h3>
-                    <p class="text-sm text-gray-500">Design & Content Erstellung. Ich arbeite iterativ und eng mit Ihnen
-                        zusammen.</p>
+                    <p class="text-sm text-gray-500">Design & Content Erstellung. Ich arbeite iterativ und eng mit Ihnen zusammen.</p>
                 </div>
                 <div class="p-4 reveal delay-400">
                     <div class="text-3xl font-bold text-gray-200 mb-4">04</div>
@@ -510,141 +391,59 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section class="py-24 px-6 bg-[#FBFBFD]">
         <div class="max-w-3xl mx-auto">
             <h2 class="text-3xl font-bold mb-12 text-center reveal">Häufige Fragen</h2>
             <div class="space-y-4">
-                <!-- FAQ 1 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm reveal cursor-pointer group"
-                    onclick="this.classList.toggle('open')">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-lg pr-4">Wie lange dauert eine neue Website?</h3>
-                        <i data-lucide="chevron-down"
-                            class="w-5 h-5 text-gray-400 transition-transform duration-300 group-[.open]:rotate-180"></i>
-                    </div>
-                    <div
-                        class="hidden group-[.open]:block mt-4 text-gray-500 text-sm leading-relaxed animate-fade-in-up">
-                        Für eine professionelle Business-Website sollten Sie mit ca. 4 bis 8 Wochen rechnen. Dies hängt
-                        stark von der Komplexität und der Bereitstellung der Inhalte ab. Kleinere Onepager sind oft
-                        schon in 2-3 Wochen realisierbar.
-                    </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm reveal cursor-pointer group" onclick="this.classList.toggle('open')">
+                    <div class="flex justify-between items-center"><h3 class="font-bold text-lg pr-4">Wie lange dauert eine neue Website?</h3><i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform duration-300 group-[.open]:rotate-180"></i></div>
+                    <div class="hidden group-[.open]:block mt-4 text-gray-500 text-sm leading-relaxed animate-fade-in-up">Für eine professionelle Business-Website sollten Sie mit ca. 4 bis 8 Wochen rechnen. Dies hängt stark von der Komplexität und der Bereitstellung der Inhalte ab. Kleinere Onepager sind oft schon in 2-3 Wochen realisierbar.</div>
                 </div>
-                <!-- FAQ 2 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm reveal delay-100 cursor-pointer group"
-                    onclick="this.classList.toggle('open')">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-lg pr-4">Was kostet eine Zusammenarbeit?</h3>
-                        <i data-lucide="chevron-down"
-                            class="w-5 h-5 text-gray-400 transition-transform duration-300 group-[.open]:rotate-180"></i>
-                    </div>
-                    <div
-                        class="hidden group-[.open]:block mt-4 text-gray-500 text-sm leading-relaxed animate-fade-in-up">
-                        Websites starten bei mir ab ca. 2.490€ (Endpreis nach § 19 UStG). Für kontinuierliche Social
-                        Media Betreuung beginnen meine Retainer-Pakete ab 990€ monatlich. Jedes Projekt wird individuell
-                        kalkuliert, um Ihnen den besten ROI zu bieten.
-                    </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm reveal delay-100 cursor-pointer group" onclick="this.classList.toggle('open')">
+                    <div class="flex justify-between items-center"><h3 class="font-bold text-lg pr-4">Was kostet eine Zusammenarbeit?</h3><i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform duration-300 group-[.open]:rotate-180"></i></div>
+                    <div class="hidden group-[.open]:block mt-4 text-gray-500 text-sm leading-relaxed animate-fade-in-up">Websites starten bei mir ab ca. 2.490€ (Endpreis nach § 19 UStG). Für kontinuierliche Social Media Betreuung beginnen meine Retainer-Pakete ab 990€ monatlich. Jedes Projekt wird individuell kalkuliert, um Ihnen den besten ROI zu bieten.</div>
                 </div>
-                <!-- FAQ 3 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm reveal delay-200 cursor-pointer group"
-                    onclick="this.classList.toggle('open')">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-lg pr-4">Bieten Sie auch Workshops an?</h3>
-                        <i data-lucide="chevron-down"
-                            class="w-5 h-5 text-gray-400 transition-transform duration-300 group-[.open]:rotate-180"></i>
-                    </div>
-                    <div
-                        class="hidden group-[.open]:block mt-4 text-gray-500 text-sm leading-relaxed animate-fade-in-up">
-                        Ja! Ich biete individuelle Workshops an, um Ihr Team fit für Social Media zu machen. Von der
-                        Content-Erstellung bis zum Community Management lernen Sie alles, um interne Kompetenzen
-                        aufzubauen.
-                    </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm reveal delay-200 cursor-pointer group" onclick="this.classList.toggle('open')">
+                    <div class="flex justify-between items-center"><h3 class="font-bold text-lg pr-4">Bieten Sie auch Workshops an?</h3><i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform duration-300 group-[.open]:rotate-180"></i></div>
+                    <div class="hidden group-[.open]:block mt-4 text-gray-500 text-sm leading-relaxed animate-fade-in-up">Ja! Ich biete individuelle Workshops an, um Ihr Team fit für Social Media zu machen. Von der Content-Erstellung bis zum Community Management lernen Sie alles, um interne Kompetenzen aufzubauen.</div>
                 </div>
-                <!-- FAQ 4 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm reveal delay-300 cursor-pointer group"
-                    onclick="this.classList.toggle('open')">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-lg pr-4">Welche Plattformen decke ich ab?</h3>
-                        <i data-lucide="chevron-down"
-                            class="w-5 h-5 text-gray-400 transition-transform duration-300 group-[.open]:rotate-180"></i>
-                    </div>
-                    <div
-                        class="hidden group-[.open]:block mt-4 text-gray-500 text-sm leading-relaxed animate-fade-in-up">
-                        Ich bin auf allen relevanten Kanälen zuhause: Instagram, LinkedIn, TikTok und Facebook. Ich
-                        analysiere genau, wo sich Ihre Zielgruppe aufhält, und fokussiere mich darauf.
-                    </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm reveal delay-300 cursor-pointer group" onclick="this.classList.toggle('open')">
+                    <div class="flex justify-between items-center"><h3 class="font-bold text-lg pr-4">Welche Plattformen decke ich ab?</h3><i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform duration-300 group-[.open]:rotate-180"></i></div>
+                    <div class="hidden group-[.open]:block mt-4 text-gray-500 text-sm leading-relaxed animate-fade-in-up">Ich bin auf allen relevanten Kanälen zuhause: Instagram, LinkedIn, TikTok und Facebook. Ich analysiere genau, wo sich Ihre Zielgruppe aufhält, und fokussiere mich darauf.</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section class="py-24 px-6 bg-[#F5F5F7]">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl font-bold mb-16 text-center text-[#1D1D1F] reveal">Kundenmeinungen</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Review 1 -->
-                <div
-                    class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow duration-300 reveal delay-100 flex flex-col justify-between">
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow duration-300 reveal delay-100 flex flex-col justify-between">
                     <div>
-                        <div class="flex text-yellow-400 mb-4">
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        </div>
-                        <p class="text-lg text-gray-700 font-medium italic mb-6">"Super professionell, sehr gute
-                            Umsetzung des Briefings. Wir sind absolut happy!"</p>
+                        <div class="flex text-yellow-400 mb-4"><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i></div>
+                        <p class="text-lg text-gray-700 font-medium italic mb-6">"Super professionell, sehr gute Umsetzung des Briefings. Wir sind absolut happy!"</p>
                     </div>
-                    <div>
-                        <p class="font-bold text-[#1D1D1F]">Christian</p>
-                        <p class="text-sm text-gray-500">Flip GmbH, Hamburg</p>
-                    </div>
+                    <div><p class="font-bold text-[#1D1D1F]">Christian</p><p class="text-sm text-gray-500">Flip GmbH, Hamburg</p></div>
                 </div>
-                <!-- Review 2 -->
-                <div
-                    class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow duration-300 reveal delay-200 flex flex-col justify-between">
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow duration-300 reveal delay-200 flex flex-col justify-between">
                     <div>
-                        <div class="flex text-yellow-400 mb-4">
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        </div>
-                        <p class="text-lg text-gray-700 font-medium italic mb-6">"Unser Briefing war nicht ganz so Top,
-                            aber mit dem neuen Briefing hat Alec das richtig super umgesetzt!"</p>
+                        <div class="flex text-yellow-400 mb-4"><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i></div>
+                        <p class="text-lg text-gray-700 font-medium italic mb-6">"Unser Briefing war nicht ganz so Top, aber mit dem neuen Briefing hat Alec das richtig super umgesetzt!"</p>
                     </div>
-                    <div>
-                        <p class="font-bold text-[#1D1D1F]">Andreas</p>
-                        <p class="text-sm text-gray-500">Motogorilla, Oberteuringen</p>
-                    </div>
+                    <div><p class="font-bold text-[#1D1D1F]">Andreas</p><p class="text-sm text-gray-500">Motogorilla, Oberteuringen</p></div>
                 </div>
-                <!-- Review 3 -->
-                <div
-                    class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow duration-300 reveal delay-300 flex flex-col justify-between">
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow duration-300 reveal delay-300 flex flex-col justify-between">
                     <div>
-                        <div class="flex text-yellow-400 mb-4">
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        </div>
-                        <p class="text-lg text-gray-700 font-medium italic mb-6">"Sensationell gut! Wirklich absolute
-                            Empfehlung. Danke Alec."</p>
+                        <div class="flex text-yellow-400 mb-4"><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i></div>
+                        <p class="text-lg text-gray-700 font-medium italic mb-6">"Sensationell gut! Wirklich absolute Empfehlung. Danke Alec."</p>
                     </div>
-                    <div>
-                        <p class="font-bold text-[#1D1D1F]">Christian</p>
-                        <p class="text-sm text-gray-500">Flip GmbH, Hamburg</p>
-                    </div>
+                    <div><p class="font-bold text-[#1D1D1F]">Christian</p><p class="text-sm text-gray-500">Flip GmbH, Hamburg</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer / Contact -->
     <footer id="contact" class="py-20 px-6 bg-[#1D1D1F] text-white">
         <div class="max-w-4xl mx-auto text-center reveal">
             <h2 class="text-4xl md:text-5xl font-bold mb-8">
@@ -655,7 +454,7 @@
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center gap-4 mb-20">
-                <a href="mailto:alexander.daniel@alexandermunz.de?subject=Allgemeine%20Anfrage&body=Hallo%20Alexander%2C%0A%0Aich%20habe%20eine%20allgemeine%20Anfrage.%0A%0ABitte%20nimm%20Kontakt%20mit%20mir%20auf%20via%3A%0ATelefon%3A%20____________________%0AE-Mail%3A%20____________________%0A%0A---%0AHinweis%20zum%20Datenschutz%3A%20Ich%20bin%20damit%20einverstanden%2C%20dass%20meine%20Daten%20zur%20Bearbeitung%20dieser%20Anfrage%20verarbeitet%20werden.%20Sofern%20kein%20Auftrag%20zustande%20kommt%20oder%20die%20Daten%20nicht%20mehr%20ben%C3%B6tigt%20werden%2C%20werden%20diese%20gel%C3%B6scht."
+                <a href="mailto:alexander.daniel@alexandermunz.de?subject=Neue%20Strategiegespr%C3%A4chsanfrage&body=Hallo%20Alexander%20ich%20interessiere%20mich%20f%C3%BCr%20ein%20kostenloses%20Beratungsgespr%C3%A4ch%20bitte%20kontaktiere%20mich%20per%20E-Mail%20oder%20per%20Telefon%3A%20%5Bhier%20Nummer%20eintragen%5D.%20Liebe%20Gr%C3%BC%C3%9Fe%20%5BHier%20Name%20eintragen%5D."
                     class="btn-liquid flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold">
                     <i data-lucide="mail" class="w-5 h-5"></i>
                     Anfrage senden
@@ -672,8 +471,7 @@
                 </a>
             </div>
 
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left border-t border-white/10 pt-10 text-sm text-gray-500">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left border-t border-white/10 pt-10 text-sm text-gray-500">
                 <div>
                     <span class="block text-white font-bold mb-2">Alexander D. Munz</span>
                     <p>Consulting für digitale Strategien</p>
@@ -688,47 +486,31 @@
         </div>
     </footer>
 
-    <!-- Script für Icons und Scroll-Effekt -->
     <script>
-        // Icons initialisieren
         lucide.createIcons();
-
-        // Navbar Scroll Effekt
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                // Scrolled Logik
                 navbar.classList.add('bg-white/80', 'backdrop-blur-md', 'border-b', 'border-gray-200', 'py-4');
                 navbar.classList.remove('bg-transparent', 'py-6');
             } else {
-                // Top Logik
                 navbar.classList.remove('bg-white/80', 'backdrop-blur-md', 'border-b', 'border-gray-200', 'py-4');
                 navbar.classList.add('bg-transparent', 'py-6');
             }
         });
 
-        // Intersection Observer für "Auftauchen" Animation
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1 // 10% des Elements müssen sichtbar sein
-        };
-
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
-                    observer.unobserve(entry.target); // Animation nur einmal abspielen
+                    observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
 
-        // Alle Elemente mit der Klasse .reveal beobachten
-        document.querySelectorAll('.reveal').forEach(el => {
-            observer.observe(el);
-        });
+        document.querySelectorAll('.reveal').forEach(el => { observer.observe(el); });
     </script>
     <script src="js/cookie-banner.js"></script>
 </body>
-
 </html>
