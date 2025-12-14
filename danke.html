@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vielen Dank! | Alexander D. Munz</title>
+    <meta name="robots" content="noindex, follow">
+    <meta http-equiv="refresh" content="7;url=index.html">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* LIQUID BUTTON STYLE */
+        .btn-liquid {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.95), rgba(147, 51, 234, 0.95));
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-liquid:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-[#FBFBFD] min-h-screen flex items-center justify-center p-6">
+
+    <div class="max-w-md w-full bg-white rounded-[2rem] p-10 text-center shadow-xl border border-gray-100 relative overflow-hidden">
+        
+        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-600 to-purple-600"></div>
+
+        <div class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
+            <i data-lucide="check" class="w-10 h-10"></i>
+        </div>
+
+        <h1 class="text-3xl font-bold text-[#1D1D1F] mb-4">Vielen Dank!</h1>
+        <p class="text-gray-500 mb-6 leading-relaxed">
+            Deine Anfrage ist sicher angekommen. Ich melde mich in der Regel innerhalb von 24 Stunden bei dir.
+        </p>
+
+        <a href="index.html" class="btn-liquid block w-full py-4 rounded-xl font-bold text-lg shadow-lg mb-6">
+            Zurück zur Startseite
+        </a>
+
+        <p class="text-xs text-gray-400">
+            Du wirst in <span id="countdown" class="font-bold text-blue-600 text-sm">5</span> Sekunden automatisch weitergeleitet...
+        </p>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        // Der Countdown
+        let seconds = 5;
+        const countdownElement = document.getElementById('countdown');
+
+        const interval = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+
+            if (seconds <= 0) {
+                clearInterval(interval);
+                window.location.href = "index.html"; // Hier passiert die Weiterleitung
+            }
+        }, 1000); // Aktualisiert jede Sekunde (1000 ms)
+    </script>
+</body>
+</html>
