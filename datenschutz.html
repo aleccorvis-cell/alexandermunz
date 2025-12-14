@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -9,55 +9,73 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
-        h2 {
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1D1D1F;
+        /* HIER IST DIE MAGIE: 
+           Wir stylen nur den Bereich mit der Klasse "legal-content".
+           Damit sieht der Text super aus, aber Navi & Footer bleiben heil.
+        */
+        .legal-content h1 {
+            font-size: 2.5rem; /* Groß */
+            font-weight: 800;  /* Fett */
+            margin-bottom: 2rem;
+            line-height: 1.2;
+            color: #111827;
         }
 
-        h3 {
+        .legal-content h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-top: 3.5rem; /* Viel Platz nach oben */
+            margin-bottom: 1.5rem;
+            color: #1F2937;
+            border-bottom: 1px solid #E5E7EB; /* Eine feine Linie unter der Überschrift */
+            padding-bottom: 0.5rem;
+        }
+
+        .legal-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
             margin-top: 2rem;
             margin-bottom: 0.75rem;
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: #333;
+            color: #374151;
         }
 
-        h4 {
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
+        .legal-content h4 {
             font-size: 1rem;
             font-weight: 600;
-            color: #1D1D1F;
-        }
-
-        p + p {
             margin-top: 1.5rem;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            line-height: 1.7;
-            color: #4B5563;
-        }
-
-        ul {
-            list-style-type: disc;
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-            color: #4B5563;
-        }
-
-        li {
             margin-bottom: 0.5rem;
+            color: #111827;
+        }
+
+        .legal-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8; /* Bessere Lesbarkeit */
+            color: #4B5563;
+        }
+
+        .legal-content ul {
+            list-style-type: disc; /* Punkte wieder einschalten */
+            margin-left: 1.5rem;   /* Einrücken */
+            margin-bottom: 1.5rem;
+            color: #4B5563;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+            padding-left: 0.5rem;
+        }
+        
+        .legal-content a {
+            color: #2563EB;
+            text-decoration: underline;
+            text-underline-offset: 4px;
         }
     </style>
 </head>
@@ -68,21 +86,26 @@
         <div class="max-w-4xl mx-auto px-6 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3 cursor-pointer group hover:opacity-90 transition-opacity">
                 <div class="relative w-auto h-16 flex items-center transform transition-transform duration-300 group-hover:scale-105 filter drop-shadow-xl">
-                    <img src="images/logoNEU.png" alt="Alexander Munz Logo" class="h-full w-auto object-contain" />
+                    <img src="images/logoNEU.png" alt="Alexander Munz Logo" class="h-full w-auto object-contain"
+                         onerror="this.style.display='none'; document.getElementById('logo-fallback').classList.remove('hidden'); document.getElementById('logo-fallback').classList.add('flex');" />
+                    <div id="logo-fallback" class="hidden h-14 w-14 bg-black text-white rounded-xl items-center justify-center font-bold tracking-tighter shadow-lg text-xl">
+                        AM
+                    </div>
                 </div>
                 <span class="font-semibold text-lg tracking-tight text-black opacity-90">
-                    Alexander Munz
+                    Alexander D. Munz
                 </span>
             </a>
-            <a href="index.html" class="text-sm text-gray-500 hover:text-blue-600 transition-colors">
-                Zurück zur Startseite
+            <a href="index.html" class="text-sm text-gray-500 hover:text-blue-600 transition-colors flex items-center gap-2">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Zurück
             </a>
         </div>
     </nav>
 
     <main class="flex-grow py-20 px-6">
-        <div class="max-w-3xl mx-auto">
-            <h1 class="text-4xl font-bold mb-12">Datenschutzerklärung</h1>
+        <div class="max-w-3xl mx-auto legal-content bg-white p-8 md:p-12 rounded-[2rem] shadow-sm border border-gray-100">
+            
+            <h1>Datenschutz­erklärung</h1>
 
             <section>
                 <h2>1. Datenschutz auf einen Blick</h2>
@@ -114,7 +137,7 @@
                 <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
                 <h3>Host Europe</h3>
                 <p>Anbieter ist die Host Europe GmbH, Hansestraße 111, 51149, Köln (nachfolgend Host Europe). Wenn Sie unsere Website besuchen, erfasst Host Europe verschiedene Logfiles inklusive Ihrer IP-Adressen.</p>
-                <p>Details entnehmen Sie der Datenschutzerklärung von Host Europe: <a href="https://www.hosteurope.de/AGB/Datenschutzerklaerung/" target="_blank" class="text-blue-600 hover:underline">https://www.hosteurope.de/AGB/Datenschutzerklaerung/</a>.</p>
+                <p>Details entnehmen Sie der Datenschutzerklärung von Host Europe: <a href="https://www.hosteurope.de/AGB/Datenschutzerklaerung/" target="_blank">https://www.hosteurope.de/AGB/Datenschutzerklaerung/</a>.</p>
                 <p>Die Verwendung von Host Europe erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar.</p>
 
                 <h3>Auftragsverarbeitung</h3>
@@ -130,7 +153,7 @@
 
                 <h3>Hinweis zur verantwortlichen Stelle</h3>
                 <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
-                <p>Alexander Daniel Munz<br>Bruckstr. 12<br>73116 Wäschenbeuren</p>
+                <p><strong>Alexander Daniel Munz</strong><br>Bruckstr. 12<br>73116 Wäschenbeuren</p>
                 <p>Telefon: 017632340849<br>E-Mail: alexander.daniel@alexandermunz.de</p>
                 <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
 
@@ -144,7 +167,7 @@
                 <p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
 
                 <h3>Widerspruchsrecht (Art. 21 DSGVO)</h3>
-                <p class="font-bold">WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN.</p>
+                <p class="font-bold text-red-600 bg-red-50 p-4 rounded-lg border border-red-100">WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN.</p>
             </section>
 
             <section>
@@ -182,7 +205,7 @@
 
             <section class="border-t border-gray-200 pt-8 mt-12">
                 <p class="text-sm text-gray-400">
-                    Quelle: <a href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer" class="hover:underline">e-recht24.de</a>
+                    Quelle: <a href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer">e-recht24.de</a>
                 </p>
             </section>
         </div>
@@ -200,6 +223,9 @@
         <p class="text-sm opacity-50">© 2025 Webdesign: Starmindsdesign by Alex 💻</p>
     </footer>
 
+    <script>
+        lucide.createIcons();
+    </script>
     <script src="js/cookie-banner.js"></script>
 </body>
 </html>
